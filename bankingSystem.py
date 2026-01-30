@@ -154,5 +154,30 @@ else:
     account.calcTransactionFee()
     account.printDetails()
 
-    
-Account.displayExitMessage()            
+# Display Exit Message
+Account.displayExitMessage()
+
+# Unit Testing
+class unittests(unittest.TestCase):
+
+    # Test 001 - Check account number is not blank
+    def test001(self):
+        assert account.getAccountNumber != ""
+
+    # Test 002 - Check account is instance of Savings class
+
+    def test002(self):
+        if accountType == "S":
+            self.assertIsInstance(account, Savings)
+
+    # Test 003 - Check account is instance of Current class
+def test003(self):
+        if accountType == "C":
+            self.assertIsInstance(payment, Current)
+
+    # Test 004 - Check transaction amount is greater than 0.0
+    def test004(self):
+        if account.transactionType != "Check Balance":
+            assert account.amount > 0.0
+        
+unittest.main()
