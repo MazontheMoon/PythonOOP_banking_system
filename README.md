@@ -1,2 +1,2 @@
-# PythonOOP_banking_system
-A simple python CLI application
+# Banking System in Python
+A simple CLI application to show OOP principles with unittests
